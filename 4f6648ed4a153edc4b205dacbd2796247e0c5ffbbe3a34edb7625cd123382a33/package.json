@@ -1,0 +1,16 @@
+{
+  "name": "Windows Banana Panorama!",
+  "version": "1.0.0",
+  "main": "src/scripts/electron-main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.2.1",
+    "electron-packager": "^17.1.2"
+  },
+  "keywords": [],
+  "author": "Aydon Fauscett",
+  "license": "GPL-3.0",
+  "description": "Windows: Banana Panorama, the game developed using Electron."
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    font-size: 25px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.chatbox-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px);
+    width: 100%;
+    margin-right: 20px;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+    margin-bottom: 8px;
+    background-color: black;
+    width: 100%;
+    flex-grow: 1;
+    border: 5px solid gray;
+    font-size: 22px;
+    padding: 5px;
+    overflow-y: auto;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.chat-content p {
+    margin: 0;
+}
+
+.help-message {
+    color: rgb(100, 255, 100);
+}
+
+.help-commands-message {
+    font-size: 21px;
+    font-family: Consolas;
+    color: rgb(100, 255, 100);
+}
+
+.err-message {
+    color: rgb(255, 100, 100);
+}
+
+.textbox-row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+.textbox {
+    border: 3px solid gray;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.textbox:focus {
+    outline: none;
+}
+
+.send-button {
+    height: 30px;
+    width: 100%;
+    max-width: 100px;
+    margin-left: 1%;
+    border: 3px solid gray;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.send-button:hover {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.send-button:active {
+    background-color: rgb(100, 255, 100);
+    opacity: 0.5;
+    transform: translateY(1px);
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Blackbox",
+  "productName": "Blackbox",
+  "version": "1.0.0",
+  "description": "Un-Secure Comms app *without* ECC and Chacha20 encryption.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "^31.2.1",
+    "electron-builder": "^25.0.5"
+  }
+}

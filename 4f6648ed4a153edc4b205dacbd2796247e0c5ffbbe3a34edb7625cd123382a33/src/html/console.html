@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles/console.css">
+		<link rel="icon" href="../resources/banana.png">
+		<title>WBP Console</title>
+	</head>
+	<body id="body">
+		<main class="flex-row">
+			<div class="column boards">
+				<div class="boards-header">
+					Game Boards
+				</div>
+				<button class="boards-button" id="board1">
+					Banana Stands
+				</button>
+				<button class="boards-button" id="board2">
+					Banana Trees
+				</button>
+				<button class="boards-button" id="board3">
+					Banana Plantations
+				</button>
+				<button class="boards-button" id="board4">
+					Banana Supermarkets
+				</button>
+				<button class="boards-button" id="board5">
+					Banana Factories
+				</button>
+				<button class="boards-button" id="board6">
+					Banana Republics
+				</button>
+				<button class="boards-button" id="board7">
+					Banana Societies
+				</button>
+			</div>
+			<div class="column pref">
+				<div class="pref-header">
+					Preferences
+				</div>
+				<div class="pref-container">
+					<div class="pref-switch" id="switch1"></div>
+					<div class="pref-text">
+						Show resource usage in logger.
+					</div>
+				</div>
+				<div class="pref-container">
+					<div class="pref-switch" id="switch2"></div>
+					<div class="pref-text">
+						Dark Mode
+					</div>
+				</div>
+				<div class="pref-container">
+					<div class="pref-switch" id="switch3"></div>
+					<div class="pref-text">
+						Fullscreen
+					</div>
+				</div>
+				<div class="pref-container">
+					<div class="pref-textbox-header" style="margin-right: 80px;">
+						Zoom:
+					</div>
+					<input class="pref-textbox" type="text" placeholder="100" maxlength="50" id="zoom">
+					<div class="pref-textbox-header">%</div>
+				</div>
+				<div class="pref-container2">
+					<div class="drag-box" id="dragbox">
+						drag window
+					</div>
+				</div>
+			</div>
+			<div class="column settings">
+				<div class="settings-header">
+					Options
+				</div>
+				<div class="sb-container">
+					<div class="info-icon">
+						<button class="info-button">i</button>
+						<span class="tooltip-text">
+							Exit the game without saving.
+						</span>
+					</div>
+					<button class="sb-default exit" id="exitButton">Exit</button>
+				</div>
+				<div class="sb-container">
+					<div class="info-icon">
+						<button class="info-button">i</button>
+						<span class="tooltip-text">
+							Save the game.
+						</span>
+					</div>
+					<button class="sb-default save" id="saveButton">Save</button>
+				</div>
+				<div class="sb-container">
+					<div class="info-icon">
+						<button class="info-button">i</button>
+						<span class="tooltip-text">
+							Game credits and about.
+						</span>
+					</div>
+					<button class="sb-default about" id="aboutButton">About</button>
+				</div>
+				<div class="sb-container">
+					<div class="info-icon">
+						<button class="info-button">i</button>
+						<span class="tooltip-text">
+							Game logs and resources.
+						</span>
+					</div>
+					<button class="sb-default logger" id="loggerButton">Logger</button>
+				</div>
+			</div>
+			<div class="footer" id="footer">
+				<p>Windows: Banana Panorama Copyright (C) 2024 Aydon Fauscett</p>
+			</div>
+			<script src="../scripts/globals.js"></script>
+			<script src="../scripts/console.js"></script>
+		</main>
+	</body>
+</html>
